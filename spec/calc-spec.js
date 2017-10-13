@@ -50,8 +50,11 @@ describe('earthToJupiter', function () {
 });
 
 describe('lifeExpectency', function () {
-  it('should return 320.22', function () {
+  it('should return life expectancy based on region', function () {
     let calc = new Calc(27);
+    let calc2 = new Calc(85);
     expect(calc.lifeExpectency('United States')).toEqual(52);
+    expect(calc.lifeExpectency('Mexico')).toEqual(49);
+    expect(calc2.lifeExpectency('United States')).toEqual(-6);
   });
 });
