@@ -11,18 +11,43 @@
   <body>
     <div class="container">
       <div class="jumbotron">
-        <h1>ENTER YOUR BIRTHDAY</h1>
+        <h1>ENTER YOUR BIRTHDAY AND REGION</h1>
         <hr>
       </div>
       <div class="row">
         <div class="col-sm-6">
           <form id="date-submit">
             <input id="birthday" name='birthday' type="date" class="datepicker">
+            <div class="input-field col s12">
+              <select id="region">
+                <option value="" disabled selected>Choose region</option>
+                <option value="United States">United States</option>
+                <option value="Mexico">Mexico</option>
+                <option value="Cuba">Cuba</option>
+              </select>
+            </div>
             <button class="btn" type="submit" name="button">Submit</button>
           </form>
         </div>
       </div>
     </div>
-    <p id="birthday-out"></p>
+    <p>Seconds old: </p>
+    <p id="seconds"></p>
+    <hr>
+    <br>
+    <br>
+    <p>Planet years:</p>
+    <p>Mercury: </p>
+    <p id="mercury"></p>
+    <p>Venus: </p>
+    <p id="venus"></p>
+    <p>Mars: </p>
+    <p id="mars"></p>
+    <p>Jupiter: </p>
+    <p id="jupiter"></p>
+    <br>
+    <br>
+    <p>Your life expectancy:</p>
+    <p id="expec"></p>
   </body>
 </html>
