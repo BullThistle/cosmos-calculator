@@ -29,4 +29,11 @@ export class Calc {
     return parseFloat((this.age * .62).toFixed(2));
   }
 
+  earthToMars() {
+    return parseFloat((this.age * 1.88).toFixed(2));
+  }
+
+  earthToJupiter() {
+    return parseFloat((this.age * 11.86).toFixed(2));
+  }
 }

@@ -29,8 +29,22 @@ describe('earthToMercury', function () {
 });
 
 describe('earthToVenus', function () {
-  it('should return 6.48', function () {
+  it('should return 16.74', function () {
     let calc = new Calc(27);
     expect(calc.earthToVenus()).toEqual(16.74);
+  });
+});
+
+describe('earthToMars', function () {
+  it('should return 50.76', function () {
+    let calc = new Calc(27);
+    expect(calc.earthToMars()).toEqual(50.76);
+  });
+});
+
+describe('earthToJupiter', function () {
+  it('should return 320.22', function () {
+    let calc = new Calc(27);
+    expect(calc.earthToJupiter()).toEqual(320.22);
   });
 });
