@@ -4,7 +4,7 @@
   "description": "",
   "main": "gulpfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "nyc karma start karma.conf.js istanbul"
   },
   "author": "",
   "license": "ISC",
@@ -27,10 +27,15 @@
     "karma-browserify": "^5.1.1",
     "karma-chrome-launcher": "^2.2.0",
     "karma-cli": "^1.0.1",
+    "karma-coverage": "^1.1.1",
     "karma-jasmine": "^1.1.0",
     "karma-jasmine-html-reporter": "^0.2.2",
     "karma-jquery": "^0.2.2",
+    "nyc": "^11.2.1",
     "vinyl-source-stream": "^1.1.0",
     "watchify": "^3.9.0"
+  },
+  "dependencies": {
+    "browserify-istanbul": "^2.0.0"
   }
 }

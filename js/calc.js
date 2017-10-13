@@ -1,5 +1,9 @@
 export class Calc {
-  constructor(number) {
-    this.number = number;
+  constructor(age) {
+    this.age = age;
+  }
+
+  yearsToSeconds() {
+    return (this.age * 31536000);
   }
 }
