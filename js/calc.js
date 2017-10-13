@@ -36,4 +36,25 @@ export class Calc {
   earthToJupiter() {
     return parseFloat((this.age * 11.86).toFixed(2));
   }
+
+  lifeExpectency(region) {
+    let expectancy = 0;
+    if (region == 'Canada') {
+      expectancy = 82;
+    } else if (region == 'United States') {
+      expectancy = 79;
+    } else if (region == 'Cuba') {
+      expectancy = 79;
+    } else if (region == 'Mexico') {
+      expectancy = 76;
+    } else if (region == 'Antigua') {
+      expectancy = 76;
+    } else if (region == 'Jamaica') {
+      expectancy = 75;
+    } else if (region == 'Bahamas') {
+      expectancy = 75;
+    }
+
+    return (expectancy - this.age);
+  }
 }

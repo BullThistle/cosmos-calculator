@@ -48,3 +48,10 @@ describe('earthToJupiter', function () {
     expect(calc.earthToJupiter()).toEqual(320.22);
   });
 });
+
+describe('lifeExpectency', function () {
+  it('should return 320.22', function () {
+    let calc = new Calc(27);
+    expect(calc.lifeExpectency('United States')).toEqual(52);
+  });
+});
