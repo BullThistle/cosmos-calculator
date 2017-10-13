@@ -1,7 +1,7 @@
 {
   "name": "cosmos-calculator",
   "version": "1.0.0",
-  "description": "",
+  "description": "Cosmos Calculator",
   "main": "gulpfile.js",
   "scripts": {
     "test": "nyc karma start karma.conf.js istanbul"
@@ -36,6 +36,8 @@
     "watchify": "^3.9.0"
   },
   "dependencies": {
-    "browserify-istanbul": "^2.0.0"
+    "browserify-istanbul": "^2.0.0",
+    "materialize": "^1.0.0",
+    "materialize-css": "^0.100.2"
   }
 }
