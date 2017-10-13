@@ -27,3 +27,10 @@ describe('earthToMercury', function () {
     expect(calc.earthToMercury()).toEqual(6.48);
   });
 });
+
+describe('earthToVenus', function () {
+  it('should return 6.48', function () {
+    let calc = new Calc(27);
+    expect(calc.earthToVenus()).toEqual(16.74);
+  });
+});
