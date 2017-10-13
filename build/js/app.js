@@ -92,7 +92,8 @@ var _calc = require('./../js/calc.js');
 $(document).ready(function () {
   $('.datepicker').pickadate({
     selectMonths: true,
-    selectYears: 15,
+    selectYears: 120,
+    max: 119,
     today: 'Today',
     clear: 'Clear',
     close: 'Ok',
