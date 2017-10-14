@@ -24,7 +24,13 @@ var Calc = exports.Calc = function () {
   }, {
     key: 'daysToSeconds',
     value: function daysToSeconds(days) {
-      return days * 86400;
+      var result = (days * 86400).toString();
+      if (result.charAt(0) == '0') {
+        result = result.slice(0, -1);
+      }
+
+      result = parseInt(result);
+      return result;
     }
   }, {
     key: 'monthsToSeconds',
@@ -104,9 +110,8 @@ $(document).ready(function () {
     e.preventDefault();
     var thisYear = 0;
     var birthday = $('#birthday').val();
-    var region = $('#region').val();
+    var region = $("input[name='region']:checked").val();
     var today = new Date();
-
     today = today.toString();
     today = today.split(' ');
     var todayMonth = today[1];

@@ -17,37 +17,55 @@
       <div class="row">
         <div class="col-sm-6">
           <form id="date-submit">
+            <label for="birthday">Birthday: </label>
             <input id="birthday" name='birthday' type="date" class="datepicker">
-            <div class="input-field col s12">
+            <!-- <div class="input-field col s12">
               <select id="region">
                 <option value="" disabled selected>Choose region</option>
                 <option value="United States">United States</option>
                 <option value="Mexico">Mexico</option>
                 <option value="Cuba">Cuba</option>
               </select>
-            </div>
+            </div> -->
+            <p>
+              <input name="region" type="radio" id="test1" value="United States">
+              <label for="test1">United States</label>
+            </p>
+            <p>
+              <input name="region" type="radio" id="test2" value="Mexico">
+              <label for="test2">Mexico</label>
+            </p>
+            <p>
+              <input name="region" type="radio" id="test3" value="Cuba">
+              <label for="test3">Cuba</label>
+            </p>
+            <p>
+              <input name="region" type="radio" id="test4" value="Canada">
+              <label for="test4">Canada</label>
+            </p>
             <button class="btn" type="submit" name="button">Submit</button>
           </form>
         </div>
       </div>
+      <div class="container center">
+        <p>Seconds old: </p>
+        <p id="seconds"></p>
+      </div>
+      <div class="container planets">
+        <p>Planet years:</p>
+        <p>Mercury: </p>
+        <p id="mercury"></p>
+        <p>Venus: </p>
+        <p id="venus"></p>
+        <p>Mars: </p>
+        <p id="mars"></p>
+        <p>Jupiter: </p>
+        <p id="jupiter"></p>
+      </div>
+      <div class="container">
+        <p>Your life expectancy:</p>
+        <p id="expec"></p>
+      </div>
     </div>
-    <p>Seconds old: </p>
-    <p id="seconds"></p>
-    <hr>
-    <br>
-    <br>
-    <p>Planet years:</p>
-    <p>Mercury: </p>
-    <p id="mercury"></p>
-    <p>Venus: </p>
-    <p id="venus"></p>
-    <p>Mars: </p>
-    <p id="mars"></p>
-    <p>Jupiter: </p>
-    <p id="jupiter"></p>
-    <br>
-    <br>
-    <p>Your life expectancy:</p>
-    <p id="expec"></p>
   </body>
 </html>

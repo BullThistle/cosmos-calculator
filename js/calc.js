@@ -8,7 +8,13 @@ export class Calc {
   }
 
   daysToSeconds(days) {
-    return (days * 86400);
+    let result = (days * 86400).toString();
+    if (result.charAt(0) == '0') {
+      result = result.slice(0, -1);
+    }
+
+    result = parseInt(result);
+    return result;
   }
 
   monthsToSeconds(months) {

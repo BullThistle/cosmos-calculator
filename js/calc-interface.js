@@ -14,9 +14,8 @@ $(document).ready(function () {
     e.preventDefault();
     let thisYear = 0;
     let birthday = $('#birthday').val();
-    let region = $('#region').val();
+    let region = $("input[name='region']:checked").val();
     let today = new Date();
-
     today = today.toString();
     today = today.split(' ');
     let todayMonth = today[1];
