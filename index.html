@@ -12,107 +12,141 @@
   </head>
   <body>
     <div class="container">
-      <div class="jumbotron">
-        <h1>ENTER YOUR BIRTHDAY AND REGION</h1>
+      <div class="jumbotron card-panel grey darken-1 white-text">
+        <h1>Cosmos Calc</h1>
+      </div>
+      <div class="container">
+        <div class="col s12">
+          <div class="parallax-container">
+            <div class="parallax"><img src="images/Millions-of-stars.jpg" style="display: block; transform: translate3d(50%, 335px, 0px); width:600px; height:500px;"></div>
+            <div class="overlay"><h2>Enter your birthday and region.</h2></div>
+          </div>
+        </div>
       </div>
       <div class="row">
         <div class="col-sm-6">
           <form id="date-submit">
-            <label for="birthday">Birthday: </label>
-            <input id="birthday" name='birthday' type="date" class="datepicker">
-            <div class="left">
-              <p>
-                <i class="material-icons">flag</i>
-                <input class ="blue" name="region" type="radio" id="test1" value="United States">
-                <label for="test1">United States</label>
-              </p>
-              <p>
-                <i class="material-icons">flag</i>
-                <input name="region" type="radio" id="test2" value="Mexico">
-                <label for="test2">Mexico</label>
-              </p>
-              <p>
-                <i class="material-icons">flag</i>
-                <input name="region" type="radio" id="test3" value="Cuba">
-                <label for="test3">Cuba</label>
-              </p>
-              <p>
-                <i class="material-icons">flag</i>
-                <input name="region" type="radio" id="test4" value="Canada">
-                <label for="test4">Canada</label>
-              </p>
+            <div class="container">
+              <label for="birthday">Birthday: </label>
+              <input id="birthday" name='birthday' type="date" class="datepicker">
+              <div class="">
+                <table class="container centered striped responsive-table">
+                  <thead>
+                    <tr>
+                      <th>Enter</th>
+                      <th>your</th>
+                      <th>region</th>
+                    </tr>
+                  </thead>
+                  <tr>
+                    <p>
+                      <th><i class="material-icons">flag</i>
+                      <input name="region" type="radio" id="test1" value="United States">
+                      <label for="test1">U. S.</label></th>
+                    </p>
+                    <p>
+                      <th><i class="material-icons">flag</i>
+                      <input name="region" type="radio" id="test2" value="Mexico">
+                      <label for="test2">Mexico</label></th>
+                    </p>
+                    <p>
+                      <th><i class="material-icons">flag</i>
+                      <input name="region" type="radio" id="test3" value="Canada">
+                      <label for="test3">Canada</label></th>
+                    </p>
+                  </tr>
+                </div>
+                <div class="middle">
+                  <tr>
+                    <p>
+                      <th><i class="material-icons">flag</i>
+                      <input name="region" type="radio" id="test4" value="Africa">
+                      <label for="test2">Africa</label></th>
+                    </p>
+                    <p>
+                      <th><i class="material-icons">flag</i>
+                      <input name="region" type="radio" id="test5" value="Antarctica">
+                      <label for="test3">Antarctica</label></th>
+                    </p>
+                    <p>
+                      <th><i class="material-icons">flag</i>
+                      <input name="region" type="radio" id="test6" value="Asia">
+                      <label for="test4">Asia</label></th>
+                    </p>
+                  </tr>
+                </div>
+                <tr>
+                  <p>
+                    <th><i class="material-icons">flag</i>
+                    <input name="region" type="radio" id="test7" value="Australia">
+                    <label for="test2">Australia</label></th>
+                  </p>
+                  <p>
+                    <th><i class="material-icons">flag</i>
+                    <input name="region" type="radio" id="test8" value="Europe">
+                    <label for="test3">Europe</label></th>
+                  </p>
+                  <p>
+                    <th><i class="material-icons">flag</i>
+                    <input name="region" type="radio" id="test9" value="South america">
+                    <label for="test4">S.A.</label></th>
+                  </p>
+                </tr>
+                  </table>
+              </div>
             </div>
+            <br>
+            <br>
             <div class="middle">
-              <p>
-                <i class="material-icons">flag</i>
-                <input name="region" type="radio" id="test4" value="Canada">
-                <label for="test4">Canada</label>
-              </p>
-              <p>
-                <i class="material-icons">flag</i>
-                <input name="region" type="radio" id="test4" value="Canada">
-                <label for="test4">Canada</label>
-              </p>
-              <p>
-                <i class="material-icons">flag</i>
-                <input name="region" type="radio" id="test4" value="Canada">
-                <label for="test4">Canada</label>
-              </p>
-              <p>
-                <i class="material-icons">flag</i>
-                <input name="region" type="radio" id="test4" value="Canada">
-                <label for="test4">Canada</label>
-              </p>
-            </div>
-              <div class="right">
-                <p>
-                  <i class="material-icons">flag</i>
-                  <input name="region" type="radio" id="test4" value="Canada">
-                  <label for="test4">Canada</label>
-                </p>
-                <p>
-                  <i class="material-icons">flag</i>
-                  <input name="region" type="radio" id="test4" value="Canada">
-                  <label for="test4">Canada</label>
-                </p>
-                <p>
-                  <i class="material-icons">flag</i>
-                  <input name="region" type="radio" id="test4" value="Canada">
-                  <label for="test4">Canada</label>
-                </p>
-                <p>
-                  <i class="material-icons">flag</i>
-                  <input name="region" type="radio" id="test4" value="Canada">
-                  <label for="test4">Canada</label>
-                </p>
-            </div>
-            <br>
-            <br>
-            <div class="center">
-              <button class="btn" type="submit" name="button">Submit</button>
+              <button class="btn grey" type="submit" name="button" onclick="unhide(this, 'about')">Submit</button>
             </div>
           </form>
         </div>
       </div>
-      <div class="container center">
-        <p>Seconds old: </p>
-        <p id="seconds"></p>
-      </div>
-      <div class="container planets">
-        <p>Planet years:</p>
-        <p>Mercury: </p>
-        <p id="mercury"></p>
-        <p>Venus: </p>
-        <p id="venus"></p>
-        <p>Mars: </p>
-        <p id="mars"></p>
-        <p>Jupiter: </p>
-        <p id="jupiter"></p>
-      </div>
-      <div class="container">
-        <p>Your life expectancy:</p>
-        <p id="expec"></p>
+      <div id="myDIV" class="hidden">
+        <div class="container center">
+          <p>Seconds old: </p>
+          <p id="seconds"></p>
+        </div>
+        
+        <table class="container centered striped responsive-table">
+          <thead>
+            <tr>
+              <th>Planet</th>
+              <th>Age</th>
+              <th>Weight</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Mercury</td>
+              <td id="mercury"></td>
+              <td>$0.87</td>
+            </tr>
+            <tr>
+              <td>Venus</td>
+              <td id="venus"></td>
+              <td>$3.76</td>
+            </tr>
+            <tr>
+              <td>Mars</td>
+              <td id="mars"></td>
+              <td>$7.00</td>
+            </tr>
+            <tr>
+              <td>Jupiter</td>
+              <td id="jupiter"></td>
+              <td>$7.00</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="container">
+          <p>Your life expectancy:</p>
+          <p id="expec"></p>
+        </div>
       </div>
     </div>
+  </div>
   </body>
 </html>

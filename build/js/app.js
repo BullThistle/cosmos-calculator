@@ -95,7 +95,17 @@ var Calc = exports.Calc = function () {
 
 var _calc = require('./../js/calc.js');
 
+function unhide(divID, otherDivId) {
+  var item = document.getElementById(divID);
+  if (item) {
+    item.className = item.className == 'hidden' ? 'unhidden' : 'hidden';
+  }
+
+  document.getElementById(otherDivId).className = 'hidden';
+}
+
 $(document).ready(function () {
+  $('.parallax').parallax();
   $('.datepicker').pickadate({
     selectMonths: true,
     selectYears: 120,
