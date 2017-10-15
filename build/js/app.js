@@ -111,6 +111,12 @@ $(document).ready(function () {
 
   $('#date-submit').submit(function (e) {
     e.preventDefault();
+    $('#seconds').empty();
+    $('#mercury').empty();
+    $('#venus').empty();
+    $('#mars').empty();
+    $('#jupiter').empty();
+    $('#expec').empty();
     var thisYear = 0;
     var birthday = $('#birthday').val();
     var region = $("input[name='region']:checked").val();
@@ -186,13 +192,12 @@ $(document).ready(function () {
 
     var calc = new _calc.Calc(age);
     var seconds = calc.yearsToSeconds();
-    $('#seconds').append(calc.yearsToSeconds());
-    $('#mercury').append(calc.earthToMercury());
-    $('#venus').append(calc.earthToVenus());
-    $('#mars').append(calc.earthToMars());
-    $('#jupiter').append(calc.earthToJupiter());
-    $('#expec').append(calc.lifeExpectency(region));
-    $('div.hidden').show();
+    $('#seconds').html(calc.yearsToSeconds());
+    $('#mercury').html(calc.earthToMercury());
+    $('#venus').html(calc.earthToVenus());
+    $('#mars').html(calc.earthToMars());
+    $('#jupiter').html(calc.earthToJupiter());
+    $('#expec').html(calc.lifeExpectency(region));
     $('#modal1').modal('open');
   });
 });
