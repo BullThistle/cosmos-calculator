@@ -1,16 +1,11 @@
 import { Calc } from './../js/calc.js';
 
-function unhide(divID, otherDivId) {
-  var item = document.getElementById(divID);
-  if (item) {
-    item.className = (item.className == 'hidden') ? 'unhidden' : 'hidden';
-  }
-
-  document.getElementById(otherDivId).className = 'hidden';
-}
-
 $(document).ready(function () {
+  $('.modal').modal({
+  
+  });
   $('.parallax').parallax();
+  $('ul.tabs').tabs();
   $('.datepicker').pickadate({
     selectMonths: true,
     selectYears: 120,
@@ -104,6 +99,8 @@ $(document).ready(function () {
     $('#mars').append(calc.earthToMars());
     $('#jupiter').append(calc.earthToJupiter());
     $('#expec').append(calc.lifeExpectency(region));
+    $('div.hidden').show();
+    $('#modal1').modal('open');
   });
 
 });
