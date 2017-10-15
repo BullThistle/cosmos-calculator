@@ -71,22 +71,20 @@ var Calc = exports.Calc = function () {
         expectancy = 82;
       } else if (region == 'United States') {
         expectancy = 79;
-      } else if (region == 'Cuba') {
-        expectancy = 79;
       } else if (region == 'Mexico') {
         expectancy = 76;
       } else if (region == 'Africa') {
-        expectancy = 76;
+        expectancy = 71;
       } else if (region == 'Antarctica') {
-        expectancy = 75;
+        expectancy = 0;
       } else if (region == 'Asia') {
-        expectancy = 75;
+        expectancy = 76;
       } else if (region == 'Australia') {
-        expectancy = 75;
+        expectancy = 82;
       } else if (region == 'Europe') {
-        expectancy = 75;
+        expectancy = 76;
       } else if (region == 'S.A.') {
-        expectancy = 75;
+        expectancy = 74;
       }
 
       return expectancy - this.age;
