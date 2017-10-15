@@ -1,186 +1,186 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-  <script src="build/js/app.js" type="text/javascript"></script>
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-  <meta content="" charset="utf-8">
-  <link rel="stylesheet" href="css/styles.css">
-  <title>Cosmos Calculator</title>
-</head>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script src="build/js/app.js" type="text/javascript"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <meta content="" charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Cosmos Calculator</title>
+  </head>
 
-<body>
-  <div class="container blue-grey lighten-5">
-    <!-- Header -->
-    <div class="jumbotron card-panel blue-grey darken-4 white-text width85 flow-text">
-      <h1>Cosmic Calculator</h1>
-    </div>
-    <br>
-    <!-- Parallax 1 -->
-    <div class="container width85">
-      <div class="col s12">
-        <div class="parallax-container index1">
-          <div class="parallax"><img src="images/Millions-of-stars.jpg" style="display: block; transform: translate3d(50%, 335px, 0px); width:600px; height:500px;"></div>
-          <div class="overlay">
-            <h2>Enter your birthday and region.</h2></div>
+  <body>
+    <div class="container blue-grey lighten-5">
+      <!-- Header -->
+      <div class="jumbotron card-panel blue-grey darken-4 white-text width85 flow-text">
+        <h1>Cosmic Calculator</h1>
+      </div>
+      <br>
+      <!-- Parallax 1 -->
+      <div class="container width85">
+        <div class="col s12">
+          <div class="parallax-container index1">
+            <div class="parallax"><img src="images/Millions-of-stars.jpg" style="display: block; transform: translate3d(50%, 335px, 0px); width:600px; height:500px;"></div>
+            <div class="overlay">
+              <h2>Enter your birthday and region.</h2></div>
+          </div>
         </div>
       </div>
-    </div>
-    <br>
-    <!-- Birthday and Region Form -->
-    <div class="row">
-      <div class="col-sm-6">
-        <form id="date-submit">
-          <div class="container">
-            <div class="width85">
-              <label for="birthday">Birthday: </label>
-              <input id="birthday" name='birthday' type="date" class="datepicker">
-            </div>
-            <table class="container centered striped responsive-table">
-              <thead>
-                <tr>
-                  <th>Enter</th>
-                  <th>your</th>
-                  <th>region</th>
-                </tr>
-              </thead>
-              <tr>
-                <p>
-                  <th><i class="material-icons">flag</i>
-                    <input name="region" type="radio" id="test1" value="United States">
-                    <label for="test1">U. S.</label></th>
-                </p>
-                <p>
-                  <th><i class="material-icons">flag</i>
-                    <input name="region" type="radio" id="test2" value="Mexico">
-                    <label for="test2">Mexico</label></th>
-                </p>
-                <p>
-                  <th><i class="material-icons">flag</i>
-                    <input name="region" type="radio" id="test3" value="Canada">
-                    <label for="test3">Canada</label></th>
-                </p>
-              </tr>
-              <div class="middle">
-                <tr>
-                  <p>
-                    <th><i class="material-icons">flag</i>
-                      <input name="region" type="radio" id="test4" value="Africa">
-                      <label for="test4">Africa</label></th>
-                  </p>
-                  <p>
-                    <th><i class="material-icons">flag</i>
-                      <input name="region" type="radio" id="test5" value="Antarctica">
-                      <label for="test5">Antarctica</label></th>
-                  </p>
-                  <p>
-                    <th><i class="material-icons">flag</i>
-                      <input name="region" type="radio" id="test6" value="Asia">
-                      <label for="test6">Asia</label></th>
-                  </p>
-                </tr>
+      <br>
+      <!-- Birthday and Region Form -->
+      <div class="row">
+        <div class="col-sm-6">
+          <form id="date-submit">
+            <div class="container">
+              <div class="width85">
+                <label for="birthday">Birthday: </label>
+                <input id="birthday" name="birthday" type="date" class="datepicker">
               </div>
+              <table class="container centered striped responsive-table">
+                <thead>
+                  <tr>
+                    <th>Enter</th>
+                    <th>your</th>
+                    <th>region</th>
+                  </tr>
+                </thead>
+                <tr>
+                  <p>
+                    <th><i class="material-icons">flag</i>
+                      <input name="region" type="radio" id="test1" value="United States">
+                      <label for="test1">U. S.</label></th>
+                  </p>
+                  <p>
+                    <th><i class="material-icons">flag</i>
+                      <input name="region" type="radio" id="test2" value="Mexico">
+                      <label for="test2">Mexico</label></th>
+                  </p>
+                  <p>
+                    <th><i class="material-icons">flag</i>
+                      <input name="region" type="radio" id="test3" value="Canada">
+                      <label for="test3">Canada</label></th>
+                  </p>
+                </tr>
+                <div class="middle">
+                  <tr>
+                    <p>
+                      <th><i class="material-icons">flag</i>
+                        <input name="region" type="radio" id="test4" value="Africa">
+                        <label for="test4">Africa</label></th>
+                    </p>
+                    <p>
+                      <th><i class="material-icons">flag</i>
+                        <input name="region" type="radio" id="test5" value="Antarctica">
+                        <label for="test5">Antarctica</label></th>
+                    </p>
+                    <p>
+                      <th><i class="material-icons">flag</i>
+                        <input name="region" type="radio" id="test6" value="Asia">
+                        <label for="test6">Asia</label></th>
+                    </p>
+                  </tr>
+                </div>
+                <tr>
+                  <p>
+                    <th><i class="material-icons">flag</i>
+                      <input name="region" type="radio" id="test7" value="Australia">
+                      <label for="test7">Australia</label></th>
+                  </p>
+                  <p>
+                    <th><i class="material-icons">flag</i>
+                      <input name="region" type="radio" id="test8" value="Europe">
+                      <label for="test8">Europe</label></th>
+                  </p>
+                  <p>
+                    <th><i class="material-icons">flag</i>
+                      <input name="region" type="radio" id="test9" value="South america">
+                      <label for="test9">S.A.</label></th>
+                  </p>
+                </tr>
+              </table>
+            </div>
+            <br>
+            <br>
+            <div class="middle">
+              <button class="waves-effect waves-purple waves-light btn-large grey" type="submit" name="button">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <br>
+      <br>
+      <!-- Modal Section -->
+      <div id="modal1" class="modal modal-fixed-footer">
+        <div class="modal-content">
+          <!-- Seconds Old -->
+          <div class="center width60">
+            <h1>You are <span id="seconds"></span> seconds old with an expected <span id="expec"></span> years left.</h1>
+          </div>
+          <br>
+          <!-- Planetary Table -->
+          <table class="container centered striped responsive-table">
+            <thead>
               <tr>
-                <p>
-                  <th><i class="material-icons">flag</i>
-                    <input name="region" type="radio" id="test7" value="Australia">
-                    <label for="test7">Australia</label></th>
-                </p>
-                <p>
-                  <th><i class="material-icons">flag</i>
-                    <input name="region" type="radio" id="test8" value="Europe">
-                    <label for="test8">Europe</label></th>
-                </p>
-                <p>
-                  <th><i class="material-icons">flag</i>
-                    <input name="region" type="radio" id="test9" value="South america">
-                    <label for="test9">S.A.</label></th>
-                </p>
+                <th>Planet</th>
+                <th>Age</th>
+                <th>Years Left</th>
               </tr>
-            </table>
-          </div>
-          <br>
-          <br>
-          <div class="middle">
-            <button class="waves-effect waves-purple waves-light btn-large grey" type="submit" name="button">Submit</button></a>
-          </div>
-        </form>
-      </div>
-    </div>
-    <br>
-    <br>
-    <!-- Modal Section -->
-    <div id="modal1" class="modal modal-fixed-footer">
-      <div class="modal-content">
-        <!-- Seconds Old -->
-        <div class="center width60">
-          <h1>You are <span id="seconds"></span> seconds old with an expected <span id="expec"></span> years left.</h1>
-        </div>
-        <br>
-        <!-- Planetary Table -->
-        <table class="container centered striped responsive-table">
-          <thead>
-            <tr>
-              <th>Planet</th>
-              <th>Age</th>
-              <th>Weight</th>
-            </tr>
-          </thead>
+            </thead>
 
-          <tbody>
-            <tr>
-              <td>Mercury</td>
-              <td id="mercury"></td>
-              <td>$0.87</td>
-            </tr>
-            <tr>
-              <td>Venus</td>
-              <td id="venus"></td>
-              <td>$3.76</td>
-            </tr>
-            <tr>
-              <td>Mars</td>
-              <td id="mars"></td>
-              <td>$7.00</td>
-            </tr>
-            <tr>
-              <td>Jupiter</td>
-              <td id="jupiter"></td>
-              <td>$7.00</td>
-            </tr>
-          </tbody>
-        </table>
+            <tbody>
+              <tr>
+                <td>Mercury</td>
+                <td id="mercury"></td>
+                <td id="mercuryLeft"></td>
+              </tr>
+              <tr>
+                <td>Venus</td>
+                <td id="venus"></td>
+                <td id="venusLeft"></td>
+              </tr>
+              <tr>
+                <td>Mars</td>
+                <td id="mars"></td>
+                <td id="marsLeft"></td>
+              </tr>
+              <tr>
+                <td>Jupiter</td>
+                <td id="jupiter"></td>
+                <td id="jupiterLeft"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class="modal-action modal-close waves-effect waves-purple btn-flat ">Exit</a>
+        </div>
       </div>
-      <div class="modal-footer">
-        <a href="#!" class="modal-action modal-close waves-effect waves-purple btn-flat ">Exit</a>
-      </div>
+      <!-- Footer -->
+      <footer class="page-footer blue-grey darken-4">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="white-text">Cosmic Calculator</h5>
+              <p class="grey-text text-lighten-4">Created for an Epicodus project on node.js</p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+              <h5 class="white-text">Repository</h5>
+              <ul>
+                <li><img src="images/GitHub-Mark-32px.png"><a class="grey-text text-lighten-3" href="https://github.com/BullThistle/cosmos-calculator">Cosmos Calculator Repo</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container grey-text text-lighten-4 right">
+            © GNU GPL v2. Copyright 2017 Rafael Furry
+          </div>
+        </div>
+      </footer>
     </div>
-    <!-- Footer -->
-    <footer class="page-footer blue-grey darken-4">
-      <div class="container">
-        <div class="row">
-          <div class="col l6 s12">
-            <h5 class="white-text">Cosmic Calculator</h5>
-            <p class="grey-text text-lighten-4">Created for an Epicodus project on node.js</p>
-          </div>
-          <div class="col l4 offset-l2 s12">
-            <h5 class="white-text">Repository</h5>
-            <ul>
-              <li><img src="images/GitHub-Mark-32px.png"><a class="grey-text text-lighten-3" href="https://github.com/BullThistle/cosmos-calculator">Cosmos Calculator Repo</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="footer-copyright">
-        <div class="container grey-text text-lighten-4 right">
-          © GNU GPL v2. Copyright 2017 Rafael Furry
-        </div>
-      </div>
-    </footer>
-  </div>
-</body>
+  </body>
 
 </html>

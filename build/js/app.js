@@ -75,11 +75,17 @@ var Calc = exports.Calc = function () {
         expectancy = 79;
       } else if (region == 'Mexico') {
         expectancy = 76;
-      } else if (region == 'Antigua') {
+      } else if (region == 'Africa') {
         expectancy = 76;
-      } else if (region == 'Jamaica') {
+      } else if (region == 'Antarctica') {
         expectancy = 75;
-      } else if (region == 'Bahamas') {
+      } else if (region == 'Asia') {
+        expectancy = 75;
+      } else if (region == 'Australia') {
+        expectancy = 75;
+      } else if (region == 'Europe') {
+        expectancy = 75;
+      } else if (region == 'S.A.') {
         expectancy = 75;
       }
 
@@ -96,7 +102,7 @@ var Calc = exports.Calc = function () {
 var _calc = require('./../js/calc.js');
 
 $(document).ready(function () {
-  $('.modal').modal({});
+  $('.modal').modal();
   $('.parallax').parallax();
   $('ul.tabs').tabs();
   $('.datepicker').pickadate({
@@ -117,6 +123,10 @@ $(document).ready(function () {
     $('#mars').empty();
     $('#jupiter').empty();
     $('#expec').empty();
+    $('#mercuryLeft').empty();
+    $('#venusLeft').empty();
+    $('#marsLeft').empty();
+    $('#jupiterLeft').empty();
     var thisYear = 0;
     var birthday = $('#birthday').val();
     var region = $("input[name='region']:checked").val();
@@ -191,12 +201,18 @@ $(document).ready(function () {
     }
 
     var calc = new _calc.Calc(age);
+    var calc2 = new _calc.Calc(calc.lifeExpectency(region));
+
     var seconds = calc.yearsToSeconds();
     $('#seconds').html(calc.yearsToSeconds());
     $('#mercury').html(calc.earthToMercury());
     $('#venus').html(calc.earthToVenus());
     $('#mars').html(calc.earthToMars());
     $('#jupiter').html(calc.earthToJupiter());
+    $('#mercuryLeft').html(calc2.earthToMercury());
+    $('#venusLeft').html(calc2.earthToVenus());
+    $('#marsLeft').html(calc2.earthToMars());
+    $('#jupiterLeft').html(calc2.earthToJupiter());
     $('#expec').html(calc.lifeExpectency(region));
     $('#modal1').modal('open');
   });

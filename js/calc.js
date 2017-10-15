@@ -1,4 +1,5 @@
 export class Calc {
+
   constructor(age) {
     this.age = age;
   }
@@ -53,14 +54,21 @@ export class Calc {
       expectancy = 79;
     } else if (region == 'Mexico') {
       expectancy = 76;
-    } else if (region == 'Antigua') {
+    } else if (region == 'Africa') {
       expectancy = 76;
-    } else if (region == 'Jamaica') {
+    } else if (region == 'Antarctica') {
       expectancy = 75;
-    } else if (region == 'Bahamas') {
+    } else if (region == 'Asia') {
+      expectancy = 75;
+    } else if (region == 'Australia') {
+      expectancy = 75;
+    } else if (region == 'Europe') {
+      expectancy = 75;
+    } else if (region == 'S.A.') {
       expectancy = 75;
     }
 
     return (expectancy - this.age);
   }
+
 }

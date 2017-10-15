@@ -1,9 +1,7 @@
 import { Calc } from './../js/calc.js';
 
 $(document).ready(function () {
-  $('.modal').modal({
-  
-  });
+  $('.modal').modal();
   $('.parallax').parallax();
   $('ul.tabs').tabs();
   $('.datepicker').pickadate({
@@ -24,6 +22,10 @@ $(document).ready(function () {
     $('#mars').empty();
     $('#jupiter').empty();
     $('#expec').empty();
+    $('#mercuryLeft').empty();
+    $('#venusLeft').empty();
+    $('#marsLeft').empty();
+    $('#jupiterLeft').empty();
     let thisYear = 0;
     let birthday = $('#birthday').val();
     let region = $("input[name='region']:checked").val();
@@ -98,12 +100,18 @@ $(document).ready(function () {
     }
 
     let calc = new Calc(age);
+    let calc2 = new Calc(calc.lifeExpectency(region));
+
     let seconds = calc.yearsToSeconds();
     $('#seconds').html(calc.yearsToSeconds());
     $('#mercury').html(calc.earthToMercury());
     $('#venus').html(calc.earthToVenus());
     $('#mars').html(calc.earthToMars());
     $('#jupiter').html(calc.earthToJupiter());
+    $('#mercuryLeft').html(calc2.earthToMercury());
+    $('#venusLeft').html(calc2.earthToVenus());
+    $('#marsLeft').html(calc2.earthToMars());
+    $('#jupiterLeft').html(calc2.earthToJupiter());
     $('#expec').html(calc.lifeExpectency(region));
     $('#modal1').modal('open');
   });
