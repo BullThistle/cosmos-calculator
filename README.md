@@ -23,11 +23,12 @@ This is a simple web app which takes in your age and tells you how old you are i
 Installation
 ------------
 
+Clone repository
 ```
-$ git https://github.com/BullThistle/cosmos-calculator.git
+$ git clone https://github.com/BullThistle/cosmos-calculator.git
 ```
 
-Install required dependencies:
+Install required dependencies
 ```
 $ npm install
 ```
@@ -35,7 +36,7 @@ $ npm install
 $ bower install
 ```
 
-Run local server:
+Run local server
 ```
 $ gulp serve
 ```
