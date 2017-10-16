@@ -1,4 +1,5 @@
-####Cosmic Calculator
+Cosmic Calculator
+======================
 
 #### By Rafael Furry
 
