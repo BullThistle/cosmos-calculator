@@ -1,6 +1,6 @@
 ####Cosmic Calculator
 ####By Rafael Furry
-======================
+
 This is a simple web app which takes in your age and tells you how old you are in seconds, how old you would be on different planets and how many years you are expected to have left on earth.
 
 ![Input form](https://user-images.githubusercontent.com/13779974/31590716-f1855fc4-b1c9-11e7-8e1c-c41933cf96f6.png)
